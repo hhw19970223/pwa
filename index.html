@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/images/favicon.ico" />
+  <link rel="manifest" href="/manifest.json">
+  <title>test</title>
+</head>
+<script type="module" src="/client-js/index.js"></script>
+
+<body>
+  <h1 id="title">已安装web app</h1>
+  <button id="install" onclick="HHW.onInstall()" style="display: none;">点击我安装到桌面</button>
+
+  <button onclick="HHW.PWA.NOTICE.requestPermission()">普通通知</button>
+  <button onclick="HHW.PWA.NOTICE.requestPermissionInSw()">有选项通知</button>
+</body>
+</html>
